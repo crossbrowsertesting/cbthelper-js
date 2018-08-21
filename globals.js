@@ -3,6 +3,8 @@ var gAuthkey  = "";
 var api = "https://crossbrowsertesting.com/api/v3/selenium/";
 var hub = "http://hub.crossbrowsertesting.com:80/wd/hub";
 module.exports = {
+	api: "https://crossbrowsertesting.com/api/v3/selenium/",
+
 	globalsGet: function(option){
 		switch(option){
 			case 'username':
@@ -27,5 +29,9 @@ module.exports = {
 			case 'hub':
 			hub = target;
 		}
+	},
+	
+	sleep: function(ms) {
+	 	return new Promise(resolve => setTimeout(resolve, ms));
 	}
 }
