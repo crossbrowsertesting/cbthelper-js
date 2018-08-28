@@ -1,6 +1,5 @@
 'use strict';
 var webdriver = require("selenium-webdriver");
-//var {CapsBuilder, login, AutomatedTest, TestHistoryBuilder, TestHistory} = require('./CrossBrowserTesting.js');
 const cbt = require("./CrossBrowserTesting.js");
 
 const cbtHub = "http://hub.crossbrowsertesting.com:80/wd/hub";
